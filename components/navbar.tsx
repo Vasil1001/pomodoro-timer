@@ -17,25 +17,17 @@ const Navbar = () => {
   const routes = [
     {
       href: '/',
-      label: 'Overview'
-    },
-    {
-      href: '/weights',
-      label: 'Weights'
-    },
-    {
-      href: '/nutrition',
-      label: 'Nutrition Tracking'
+      label: 'Pomodoro'
     }
   ]
 
   return (
-    <header className="border-b py-2 sm:flex sm:justify-between">
+    <header className="mx-auto max-w-xl border-b py-2 sm:flex sm:justify-between">
       <div className="relative grid h-16 w-full grid-cols-2 items-center md:grid-cols-3">
         <div className="col-span-1 flex items-center">
           <Sheet>
             <SheetTrigger>
-              <Menu className="h-6 w-6 md:hidden" />
+              <Menu className="size-6 md:hidden" />
             </SheetTrigger>
             <SheetContent side="left" className="w-[300px] sm:w-[400px]">
               <nav className="flex flex-col gap-4">
@@ -48,7 +40,7 @@ const Navbar = () => {
             </SheetContent>
           </Sheet>
           <Link href="/">
-            <h1 className="text-lg font-bold tracking-tighter">Nutrition Tracker</h1>
+            <h1 className="text-lg font-bold tracking-tighter"></h1>
           </Link>
         </div>
 
@@ -75,7 +67,7 @@ const Navbar = () => {
             variant="ghost"
             size="icon"
             aria-label="Toggle Theme"
-            className="ml-2 bg-[#f4f4f5] hover:bg-[#f2f4f5]/60 dark:bg-[#2e3039]  dark:hover:bg-[#2e3039]/50"
+            className="ml-2 bg-[#f4f4f5] hover:bg-[#f2f4f5]/60 dark:bg-[#2e3039] dark:hover:bg-[#2e3039]/50"
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
             <Sun className="h-6 w-6 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
             <Moon className="absolute h-6 w-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />

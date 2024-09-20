@@ -12,7 +12,7 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/h
 export default function Home() {
   return (
     <div>
-      <div className="my-6 text-3xl font-bold tracking-tighter">Dashboard</div>
+      <div className="my-6 text-3xl font-bold tracking-tighter"></div>
       <Dashboard />
     </div>
   )
